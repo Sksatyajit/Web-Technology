@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map with Hotspots</title>
+
+    <style>
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            color: green;
+            text-align: center;
+        }
+
+        iframe {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Interactive Map</h1>
+    <p>Click on the map areas</p>
+    <br>
+    <p>WORLD MAP</p>
+
+    <img src="map.jpg" usemap="#worldmap" width="400">
+
+    <map name="worldmap">
+        <area shape="rect" coords="10,10,150,150"
+              href="https://www.google.com"
+              target="frame">
+
+        <area shape="circle" coords="300,150,40"
+              href="https://www.wikipedia.org"
+              target="frame">
+    </map>
+
+    <br><br>
+
+    <iframe name="frame" width="400" height="200"></iframe>
+
+</body>
+</html>
